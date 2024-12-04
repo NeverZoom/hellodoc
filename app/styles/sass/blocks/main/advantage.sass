@@ -1,0 +1,62 @@
+.advantage
+  padding-top: 190px
+  .advantage_title
+    font-weight: 700
+    font-size: 28px
+    line-height: 170%
+    text-transform: uppercase
+    color: #28314d
+    margin-bottom: 80px
+  .advantage_block.peach
+    background: #ffe4b9
+  .advantage_block.blue
+    background: #c9e3ff
+  .advantage_block.yellow
+    background: #fcffd8
+  .advantage_wrapper
+    display: flex
+    gap: 40px
+    flex-wrap: wrap      
+    .between
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      background-size: cover
+    .advantage_block
+      padding: 50px 50px 40px 50px
+      border-radius: 35px
+      &:nth-child(1)
+        width: calc(70% - 20px)
+      &:nth-child(3), &:nth-child(4), &:nth-child(7), &:nth-child(8)
+        width: calc(50% - 20px)
+      &:nth-child(6)
+        width: calc(70% - 20px)
+      .advantage_title
+        font-weight: 700
+        font-size: 24px
+        line-height: 140%
+        text-transform: uppercase
+        color: #28314d
+        margin-bottom: 35px
+      .advantage_content
+        font-weight: 500
+        font-size: 15px
+        line-height: 150%
+        color: #28314d
+        margin-bottom: 18px
+        &:last-child
+          margin: 0
+    img
+      // height: 100%
+      border-radius: 35px
+      object-fit: cover
+      // width: 100%
+      &:nth-child(2)
+        width: calc(30% - 20px)
+      &:nth-child(5)
+        width: calc(40% - 20px)
+        object-fit: contain
+        position: relative
+        margin-left: -10%
+        height: 300px

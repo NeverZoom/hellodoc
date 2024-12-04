@@ -1,0 +1,70 @@
+.hero
+  background: #d7eaff
+  min-height: 100vh
+  .hero_title, .hero_subtitle, .hero_subtitle_2
+    z-index: 2
+    position: relative
+  .hero_title
+    margin-top: 120px
+    width: min-content
+    margin-bottom: 24px
+    font-weight: 600
+    font-size: 52px
+    line-height: 120%
+    text-transform: uppercase
+    color: #28314d
+  .hero_subtitle
+    font-weight: 500
+    font-size: 22px
+    line-height: 130%
+    color: #28314d
+    margin-bottom: 24px
+  .hero_subtitle_2
+    margin-top: 86px
+    font-weight: 400
+    font-size: 17px
+    line-height: 130%
+    color: #28314d
+  img
+    position: absolute
+    object-fit: contain
+    right: 0
+    top: 80px
+    max-height: 600px
+    width: 67%
+  .product_type_wrapper
+    margin-bottom: 130px
+    margin-top: 70px
+    padding: 0 75px 0 40px
+    display: flex
+    gap: 20px
+    position: relative
+    z-index: 2
+    .product_type_item
+      &:nth-child(3)
+        background: #ffbbc0
+      &:nth-child(2)
+        background: #f6fcb0
+    .product_type_item
+      width: 210px
+      border-radius: 20px
+      display: block
+      position: relative
+      background: #ffe0aa
+      text-decoration: none
+      padding: 35px 20px
+      svg
+        position: absolute
+        top: 8px
+        right: 8px
+      .item_title
+        font-weight: 600
+        font-size: 17px
+        line-height: 130%
+        color: #2a2a2a
+        margin-bottom: 3px
+      .item_subtitle
+        font-weight: 400
+        font-size: 17px
+        line-height: 130%
+        color: #2a2a2a

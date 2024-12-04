@@ -1,0 +1,37 @@
+.about
+  position: relative
+  &::before
+    z-index: -1
+    content: ''
+    position: absolute
+    top: 0
+    height: 50%
+    width: 100%
+    left: 0
+    right: 0
+    background: #d7eaff
+  .about_wrapper  
+    background: #eef6ff
+    border-radius: 100px
+    padding: 100px 0
+  img
+    width: 100%
+    object-fit: cover
+  .about_title, p.about_content
+    padding-left: 60px
+  .about_title
+    font-weight: 700
+    font-size: 28px
+    line-height: 150%
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    color: #28314d
+    margin-bottom: 40px
+  p.about_content
+    margin-bottom: 18px
+    font-weight: 400
+    font-size: 18px
+    line-height: 150%
+    color: #28314d
+    &:last-child
+      margin-bottom: 0
