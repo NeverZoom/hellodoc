@@ -1,9 +1,11 @@
 .scroll_block
   padding-top: 130px
   padding-bottom: 130px
-  .fixed
+  .fixed-item.fixed
     img
       margin-top: 40px
+  .fixed-item
+    img
       width: 100%
       max-height: 382px
       object-fit: cover
@@ -11,7 +13,7 @@
     .scroll_block_info
       margin-bottom: 18px
       font-weight: 500
-      font-size: 15px
+      font-size: 16px
       line-height: 150%
       color: #28314d
       &:nth-child(2)
@@ -27,21 +29,23 @@
     border-radius: 35px
     padding: 50px 50px 40px 50px
     .title
-      margin-bottom: 40px
+      margin-bottom: 20px
       font-weight: 700
       font-size: 24px
       line-height: 140%
       text-transform: uppercase
       color: #28314d
-    p, ul li
+    p, ul li, ol li
       font-weight: 500
-      font-size: 15px
+      font-size: 16px
       line-height: 150%
       color: #28314d
       margin-bottom: 18px
       &:last-child
         margin: 0
-    ul li
+    ul li, ol li
+      margin: 0
+    ul, ol
       margin: 0
     &:last-child
       margin: 0
