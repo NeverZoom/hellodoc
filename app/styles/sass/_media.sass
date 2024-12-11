@@ -63,6 +63,724 @@
     p.about_content
       margin-bottom: 10px
       font-size: 14px
+  .section_title
+    margin-bottom: 30px
+    font-size: 26px
+  .servs
+    padding-top: 60px
+    .servs_item
+      padding: 20px 37px
+      border-radius: 35px
+      height: 180px
+      margin-bottom: 20px
+      svg
+        top: 10px
+        right: 10px
+      .servs_item_title
+        margin-bottom: 10px
+        font-size: 18px
+      .servs_item_subtitle
+        font-size: 14px
+        max-width: 70%
+        br
+          display: none
+      .servs_item_info
+        font-size: 13px
+        display: none
+      img
+        max-height: 70%
+  .advantage
+    padding-top: 60px
+    overflow: hidden
+    .advantage_title
+      font-size: 18px
+      margin-bottom: 20px
+    .advantage_wrapper
+      flex-direction: column
+      gap: 20px
+      .between
+      .advantage_block
+        padding: 20px 25px
+        border-radius: 25px        
+        &:nth-child(1), &:nth-child(6) ,&:nth-child(3), &:nth-child(4), &:nth-child(7), &:nth-child(8)        
+          width: calc(100% + 40px)
+          margin-left: -20px
+        &:nth-child(5)
+          width: calc(100% + 40px)
+          height: 60px
+          position: relative
+          z-index: 2
+          img
+            position: absolute
+            z-index: 3
+            left: -20px
+            right: 0
+            top: -140%
+            height: 220px
+            margin-left: 0%
+            width: calc(100% + 40px)
+            object-fit: cover
+            margin: 0
+            max-height: none
+        &:nth-child(8)
+          min-height: 225px
+        .advantage_title
+          font-size: 15px
+          margin-bottom: 12px
+        .advantage_content
+          font-size: 14px
+          margin-bottom: 12px
+      img
+        border-radius: 35px
+        &:nth-child(2)
+          width: 100%
+          max-height: 174px
+          order: -1
+          margin-bottom: 10px
+  .scroll_block
+    padding-top: 60px
+    padding-bottom: 60px
+    .fixed-item.fixed
+      img
+        margin-top: 0px
+        margin-bottom: 20px
+    .fixed-item
+      margin-bottom: 20px
+      display: flex
+      flex-direction: column
+      img
+        order: -1
+        width: 100%
+        max-height: 190px
+        border-radius: 25px
+      .scroll_block_info
+        margin-bottom: 12px
+        font-size: 14px
+    .scroll_block_item
+      margin-bottom: 20px
+      border-radius: 25px
+      padding: 25px 20px
+      width: calc( 100% + 40px)
+      margin-left: -20px
+      .title
+        margin-bottom: 12px
+        font-size: 15px
+      p, ul li, ol li
+        font-size: 14px
+        margin-bottom: 12px
+      ul li, ol li
+        margin-bottom: 0      
+  .checkup
+    padding: 0px
+    border-radius: 0px
+    background: none
+    .checkup_subtitle
+      margin-bottom: 12px
+      font-size: 14px
+    .checkup_subtitle_big
+      font-size: 15px
+      margin-bottom: 20px
+      margin-top: 28px
+      br
+        display: none
+    .checkup_item
+      padding: 20px 8px 25px 20px
+      border-radius: 25px
+      margin-bottom: 20px
+      width: calc(100% + 40px)
+      margin-left: -20px
+      .checkup_item_title
+        margin-bottom: 20px
+        font-size: 15px
+      span
+        gap: 20px
+        align-items: center
+        .checkup_item_content
+          font-size: 14px
+        img
+          border-radius: 20px
+          width: 90px
+          height: 70px
+          margin-bottom: 20px
+    .about_checkup_info
+      margin-top: 10px
+      font-size: 14.6px
+      span
+        border-radius: 35px
+        padding: 4px 8px    
+    .button 
+      margin-top: 30px    
+      font-size: 14px
+      padding: 16px 25px
+  .drop
+    padding: 60px 0 0 0
+    background: none
+    border-radius: 0px
+    .drop_subtitle
+      font-size: 14px
+      margin-bottom: 12px
+    .drop_items_wrapper
+      gap: 20px
+      margin-top: 20px
+    .drop_item
+      border-radius: 25px
+      padding: 25px 8px 25px 25px
+      width: calc(100% + 40px)
+      margin-left: -20px
+      margin-right: -20px
+      .icon
+        right: 4px
+        top: 4px
+        img, svg
+          max-width: 50px
+      .drop_item_title
+        margin-bottom: 12px
+        font-size: 15px
+      .drop_item_subtitle
+        font-size: 14px
+    .about_drop_info
+      margin-top: 30px
+      font-size: 15px
+      span
+        border-radius: 35px
+        padding: 4px 8px       
+    .about_drop_btn
+      margin-left: 0%
+      margin-top: 30px    
+      font-size: 14px
+      padding: 16px 25px
+  .scroll_block.order-2.order-lg-1
+    padding-bottom: 0
+  .therapy
+    padding: 0px 0
+    border-radius: 0px
+    background: none
+    .therapy_subtitle
+      font-size: 14px
+      margin-bottom: 12px
+    .therapy_items_wrapper
+      gap: 20px
+      flex-direction: column
+    .therapy_item_text
+      width: 100%
+    .therapy_item
+      margin-left: -20px
+      border-radius: 25px
+      padding: 20px 8px 25px 20px
+      width: calc(100% + 40px)
+      .icon
+        right: auto
+        top: 20px
+        left: 20px
+        img, svg
+          object-fit: cover
+          height: 70px
+          width: 90px
+          border-radius: 20px
+      .therapy_item_title
+        margin-bottom: 32px
+        margin-left: 120px
+        margin-top: 12px
+        font-size: 15px
+      .therapy_item_subtitle
+        font-size: 14px
+  .urology
+    padding: 0px 0
+    background: none
+    border-radius: 0px
+    .urology_subtitle
+      font-size: 14px
+      margin-bottom: 12px
+    .urology_items_wrapper
+      gap: 20px
+      flex-direction: column
+      margin-top: 8px
+      .urology_item
+        border-radius: 25px
+        padding: 20px 20px 25px 20px
+        width: calc(100% + 40px)
+        margin-left: -20px
+        &:last-child
+          width: calc(100% + 40px)
+        .urology_item_title
+          margin-bottom: 20px
+          font-size: 15px
+        span
+          gap: 20px
+          align-items: center
+          .urology_item_subtitle
+            font-size: 14px
+          .icon
+            margin-bottom: 20px
+            img
+              max-height: 70px
+              width: 90px
+              border-radius: 20px
+  footer
+    padding-bottom: 40px
+    .footer_wrapper
+      padding-top: 80px
+      .logo
+        margin-bottom: 12px
+      p
+        margin-bottom: 10px
+        font-size: 12px
+      .nav_wrapper
+        gap: 50px
+        margin-bottom: 40px
+        nav
+          width: 100%
+          ul
+            gap: 10px 0
+            li
+              width: 100%
+              a
+                font-size: 14px
+        .social_items
+          width: 100%
+          display: flex
+          flex-direction: column
+          align-items: flex-end
+          span
+            display: flex
+            gap: 10px
+      .info_wrapper
+        gap: 0px
+        margin-right: 0px
+        a
+          font-size: 16px
+  .app
+    background: none
+    border-radius: 0px
+    padding: 0px 0
+    .section_title
+      margin-bottom: 16px
+    p
+      font-size: 14px
+    .links_wrapper
+      border-radius: 25px
+      background: #e2f0ff
+      margin-top: 19px
+      width: calc(100% + 40px)
+      margin-left: -20px
+      gap: 0px
+      padding: 20px
+      .qr
+        display: none
+        height: 100%
+      span
+        width: 100%
+        gap: 15px
+        .buttons
+          gap: 8px
+          flex-direction: column
+          a
+            width: 115px
+            svg
+              width: 100%
+              height: auto
+    .image_wrapper
+      width: 100%
+      img
+        top: -70px
+        right: -20px
+  .drop-page.hero, .checkup-page.hero
+    background: #d7eaff
+    border-radius: 0 0 25px 25px
+    .hero_title
+      font-weight: 700
+      margin-bottom: 35px
+      margin-top: 42px
+    .drop-page_subtitle-big
+      margin-bottom: 10px
+      font-size: 18px
+      font-weight: 700
+    .drop-page_subtitle
+      margin-bottom: 0px
+      font-size: 14px
+    .button.main
+      width: 100%
+      padding: 15px 23px
+      font-size: 14px
+      margin-top: 10px
+  .drop-page.about, .checkup-page.about
+    .about_wrapper
+      overflow: inherit
+      margin-top: 170px
+      padding: 25px 0
+      position: relative
+    &::before
+      content: none
+    img
+      transform: rotate(0deg)
+      position: absolute
+      left: 30px
+      top: -170px
+      height: 270px
+      max-height: none
+      width: 217px
+      object-fit: contain
+      z-index: -1
+  .drop-page.drop
+    padding: 80px 0 80px 0
+    .drop_subtitle
+      margin-bottom: 10px
+      font-size: 18px
+  .drop-list
+    padding: 30px 0 40px 0
+    margin-bottom: 60px
+    border-radius: 25px
+    .button
+      width: 100%
+      padding: 15px 23px
+      margin-top: 40px
+      font-size: 14px
+    .drop_subtitle
+      margin-bottom: 30px
+      font-size: 15px
+      span
+        background: #fcffd8
+        border-radius: 35px
+        padding: 2px 6px
+    .drop-items_wrapper
+      gap: 30px
+      flex-direction: column
+    .drop-item
+      width: calc(100% + 40px)
+      margin-left: -20px
+      border-radius: 25px
+      img
+        border-radius: 25px
+        width: 150px
+      span
+        padding: 22px 5px 13px 6px
+        .title
+          margin-bottom: 10px
+          font-size: 15px
+        p
+          margin-bottom: 10px
+          font-size: 12px
+        .price
+          gap: 30px
+          .last_price
+            font-size: 15px
+          .current_price
+            font-size: 15px
+  .doctor-page.hero
+    background: #d7eaff 
+    border-radius: 0 0 25px 25px
+    .hero_title
+      margin-bottom: 14px
+      margin-top: 42px
+      font-weight: 700
+    .doctor-page_subtitle
+      font-size: 14px
+      span
+        display: block
+        width: fit-content
+        font-size: 14px
+        padding: 2px 16px
+        border-radius: 30px
+    .image_wrapper
+      img
+        width: 100%
+        top: auto
+        margin-top: 25px
+      .layer
+        width: 100%
+        right: 0%
+        bottom: 30px
+        padding: 0px
+        font-size: 14px
+        line-height: 150%
+        background: none
+        border-radius: 0px
+      .button_wrapper
+        position: relative
+        left: auto
+        bottom: -50px
+        gap: 26px
+        font-size: 20px
+        .button
+          margin: 0 auto
+          width: 90%
+          font-size: 14px
+          border-radius: 90px
+          padding: 15px 20px
+  .doctor
+    padding: 50px 0 60px 0
+    img
+      margin: 25px 0
+      height: 245px
+      object-position: top
+    .title
+      padding-left: 0px
+      margin-bottom: 10px
+      font-size: 18px
+    p
+      padding-left: 0px
+      font-size: 14px
+      &:nth-child(2)
+        margin-bottom: 8px
+    span
+      padding-left: 0px
+      margin: 20px 0
+      flex-direction: column
+      align-items: flex-start
+      gap: 12px
+      a
+        font-size: 14px
+        padding: 8px 13px
+        border-radius: 10px
+  .doctor-list
+    padding: 0 0 60px 0
+    .title
+      font-size: 18px
+      margin-bottom: 30px
+      padding-left: 0px
+      margin-top: 60px
+    .item
+      gap: 0px
+      border-radius: 25px
+      margin-bottom: 30px
+      flex-direction: column
+      .about_person
+        border-radius: 30px
+        width: 100%
+        padding: 35px 20px
+        span
+          .name
+            margin-bottom: 11px
+            font-size: 18px
+          .post
+            font-size: 14px
+            margin-bottom: 5px
+        .experience
+          font-size: 14px
+      .info
+        padding: 20px
+        span
+          flex-direction: column
+          margin-bottom: 15px
+          align-items: flex-start
+          gap: 15px
+          .link
+            border-radius: 10px
+            padding: 5px 10px 
+            font-size: 12px
+      p
+        margin-bottom: 5px
+        font-size: 12px
+  .checkup-page.checkup
+    padding: 60px 0
+    .checkup_subtitle_big
+      margin-top: 0
+      margin-bottom: 30px
+      font-size: 18px
+    .price
+      margin-top: 14px
+      gap: 18px
+      .current_price
+        padding: 3px 12px
+        border-radius: 130px
+        font-size: 15px
+      .last_price
+        font-size: 15px
+  .checkup-list
+    border-radius: 25px
+    padding: 30px 0 40px 0
+    .button
+      font-size: 14px
+      padding: 15px 18px
+      width: 100%
+      margin-top: 40px
+    .checkup-list_title
+      margin-bottom: 30px
+      font-size: 15px
+      span
+        border-radius: 35px
+        padding: 2px 8px
+    .checkup-list_wrapper
+      gap: 30px
+      .checkup-list_item
+        width: 100%
+        border-radius: 25px
+        display: flex
+        flex-direction: row-reverse
+        position: relative
+        background: #fff
+        .image_wrapper
+          align-items: flex-end
+          padding-top: 28px
+          width: 130px
+          border-radius: 25px
+          position: relative
+          z-index: 1
+          &::before
+            content: none
+          img
+            position: relative
+            z-index: 1
+            height: 80px
+        .content
+          position: initial
+          width: calc(100% - 130px)
+          border-radius: 25px
+          padding: 22px 22px 17px 22px
+          svg
+            z-index: 5
+            top: 10px
+            right: 10px
+          .title
+            margin-bottom: 10px
+            font-size: 15px
+          p
+            margin-bottom: 18px
+            font-size: 12px
+          span
+            margin-bottom: 4px
+            font-size: 13px
+            display: none
+          .price
+            gap: 20px
+            .current_price
+              font-size: 15px
+            .last_price
+              font-size: 15px
+  .checkup-page.promo
+    .promo_wrapper
+      border-radius: 0px
+      margin-bottom: 60px
+      padding: 0px
+      background-image: none !important
+      width: calc(100% + 40px)
+      margin-left: -20px
+      .title
+        padding: 0 20px
+        font-size: 15px
+        margin-bottom: 5px
+      p
+        padding: 0 20px
+        max-width: 100%
+        font-size: 14px
+        margin-bottom: 15px
+        &:nth-child(3)
+          padding: 20px 120px 50px 25px
+          border-radius: 25px
+          width: calc(100% + 40px)
+          // margin-left: -20px
+          background-size: cover
+          background-position: right center
+      .button
+        margin-top: 15px
+        font-size: 14px
+        padding: 15px 18px
+        width: calc(100% - 40px)
+        margin-left: 20px
+  .checkup_popup
+    max-width: 950px
+    width: 100%
+    padding: 30px
+    position: relative
+    .header_wrapper
+      gap: 0px
+      flex-direction: row-reverse
+      img
+        max-width: 170px
+        // right: 0
+        // top: 0
+        // position: absolute
+        margin-top: 0px
+        margin-bottom: 0px
+        margin-left: 0px
+        margin-right: -40px
+        z-index: 1
+      .title
+        font-size: 18px
+        margin-bottom: 10px
+        margin-top: 0px
+        span
+          border-radius: 35px
+          padding: 5px 10px
+      .subtitle
+        font-size: 14px
+    .block
+      position: relative
+      z-index: 2
+      padding: 25px 20px
+      width: calc(100% + 60px)
+      margin-left: -30px
+      border-radius: 25px
+      margin-bottom: 20px
+      .title
+        margin-bottom: 12px
+        font-size: 15px
+      p
+        font-size: 14px
+        margin-bottom: 12px
+    .block-big.blue
+      background: none
+    .block-big.yellow
+      background: none
+    .block-big.peach
+      background: none
+    .block-big
+      padding: 0px
+      border-radius: 0px
+      margin-bottom: 40px
+      background: none
+      .header
+        gap: 0px
+        .title
+          margin-bottom: 20px
+          font-size: 18px
+        img
+          display: none
+          margin-top: -40px
+          margin-left: -20px
+      .list
+        gap: 20px
+        flex-direction: column
+        .column
+          gap: 20px
+          width: 100%
+        .item
+          border-radius: 35px
+          background: #fffaf3
+          .type
+            background: #ffecce
+            height: 70px
+            border-radius: 35px
+            font-size: 15px
+          ol
+            padding: 20px 30px 20px 45px
+            li
+              font-size: 12px
+    .promo
+      width: calc(100% + 60px)
+      margin-left: -30px
+      background-image: none !important
+      border-radius: 0px
+      padding: 0px
+      .title
+        border-radius: 25px
+        background-size: cover
+        background-position: right center
+        max-width: 100%
+        width: calc(100% + 60px)
+        padding: 36px 130px 36px 30px
+        margin-bottom: 20px
+        font-size: 15px
+        background-image: url(../images/dist/checkup-page_promo.png) !important
+      ul
+        padding: 0 30px
+        max-width: 100%
+        li
+          margin-bottom: 12px
+          font-size: 14px
+  .white-popup-block
+    margin: 40px auto
+
 
 +media-breakpoint-up(sm)
 +media-breakpoint-up(md)
@@ -74,7 +792,7 @@
     background: #d7eaff
     min-height: 100vh
     .hero_title
-      margin-top: 120px
+      margin-top: 100px
       margin-bottom: 24px
       font-size: 52px
     .hero_subtitle
@@ -82,17 +800,17 @@
       margin-bottom: 24px
     .hero_subtitle_2
       margin-top: 86px
-      font-size: 17px
+      font-size: 18px
       margin-bottom: 0px
     img
       position: absolute
       right: 0
-      top: 80px
+      top: 100px
       max-height: 600px
       width: 67%
     .product_type_wrapper
       margin-bottom: 130px
-      margin-top: 70px
+      margin-top: 90px
       padding: 0 75px 0 25wpx
       gap: 20px
       flex-direction: row
@@ -123,15 +841,666 @@
       border-radius: 35px
       max-height: none
       width: 100%
+      height: 360px
     .about_title, p.about_content
       padding-left: 60px
     .about_title
       font-size: 28px
       margin-bottom: 40px
     p.about_content
-      margin-bottom: 18px
+      margin-bottom: 15px
       font-size: 16px
-
+  .section_title
+    margin-bottom: 70px
+    font-size: 52px
+  .servs
+    padding-top: 130px
+    .servs_item
+      padding: 35px 30px
+      border-radius: 35px
+      height: 360px
+      margin-bottom: 40px
+      svg
+        top: 17px
+        right: 17px
+      .servs_item_title
+        margin-bottom: 16px
+        font-size: 24px
+      .servs_item_subtitle
+        font-size: 16px
+        max-width: none
+        br
+          display: block
+      .servs_item_info
+        font-size: 13px
+        display: block
+      img
+        max-height: none
+  .advantage
+    padding-top: 190px
+    .advantage_title
+      font-size: 28px
+      margin-bottom: 80px
+    .advantage_wrapper
+      flex-direction: row
+      gap: 40px
+      .between
+      .advantage_block
+        padding: 50px 50px 40px 50px
+        border-radius: 35px
+        &:nth-child(1)
+          width: calc(70% - 20px)
+        &:nth-child(3), &:nth-child(4), &:nth-child(7), &:nth-child(8)
+          width: calc(50% - 20px)
+        &:nth-child(6)
+          width: calc(70% - 20px)
+        &:nth-child(5)
+          padding: 0
+          width: calc(30% - 20px)
+          img
+            position: relative
+            top: auto
+            left: auto
+            margin-left: -25%
+            height: 300px
+            width: 125%
+            object-fit: contain
+        .advantage_title
+          font-size: 24px
+          margin-bottom: 35px
+        .advantage_content
+          font-size: 16px
+          margin-bottom: 18px
+      img
+        border-radius: 35px
+        &:nth-child(2)
+          width: calc(30% - 20px)
+          order: inherit
+          max-height: none
+  .scroll_block
+    padding-top: 130px
+    padding-bottom: 130px
+    .fixed-item.fixed
+      img
+        margin-top: 40px
+        margin-bottom: 0px
+    .fixed-item
+      margin-bottom: 0px
+      display: block
+      img
+        width: 100%
+        max-height: 382px
+        border-radius: 65px
+      .scroll_block_info
+        margin-bottom: 18px
+        font-size: 16px
+    .scroll_block_item
+      margin-bottom: 40px
+      border-radius: 35px
+      padding: 50px 50px 40px 50px
+      width: 100%
+      margin-left: 0px
+      .title
+        margin-bottom: 20px
+        font-size: 24px
+      p, ul li, ol li
+        font-size: 16px
+        margin-bottom: 18px 
+      ul li, ol li
+        margin-bottom: 18px
+  .checkup
+    padding: 100px 0 113px 0
+    border-radius: 100px
+    background: #ebf5ff
+    .checkup_subtitle
+      margin-bottom: 40px
+      font-size: 16px
+    .checkup_subtitle_big
+      font-size: 24px
+      margin-top: 0px
+      margin-bottom: 50px
+      br
+        display: block
+    .checkup_item
+      width: 100%
+      margin-left: 0px
+      padding: 50px 25px 25px 50px
+      border-radius: 35px
+      margin-bottom: 50px
+      .checkup_item_title
+        margin-bottom: 55px
+        font-size: 24px
+      span
+        gap: 22px
+        .checkup_item_content
+          font-size: 16px
+        img
+          border-radius: 30px
+          margin-bottom: 0px
+          width: 120px
+          height: 120px
+    .about_checkup_info
+      margin-top: 50px
+      font-size: 24px
+      span
+        border-radius: 35px
+        padding: 6px 10px     
+  .drop
+    padding: 100px 0
+    background: #ebf5ff
+    border-radius: 100px
+    .drop_subtitle
+      font-size: 16px
+      margin-bottom: 18px
+    .drop_items_wrapper
+      gap: 40px
+      margin-top: 40px
+    .drop_item
+      border-radius: 35px
+      padding: 40px
+      width: calc((100% - 80px) / 3)
+      margin-right: 0px
+      margin-left: 0px
+      .icon
+        right: 8px
+        top: 8px
+        img, svg
+          max-width: 50px
+      .drop_item_title
+        margin-bottom: 40px
+        font-size: 16px
+      .drop_item_subtitle
+        font-size: 15px
+    .about_drop_info
+      margin-top: 100px
+      font-size: 24px
+      span
+        border-radius: 35px
+        padding: 6px 10px        
+    .about_drop_btn
+      padding: 16px 23px
+      margin-left: -50%
+  .scroll_block.order-2.order-lg-1
+    padding-bottom: 130px
+  .therapy
+    padding: 100px 0
+    background: #ebf5ff
+    border-radius: 100px
+    .therapy_subtitle
+      font-size: 16px
+      margin-bottom: 18px
+    .therapy_items_wrapper
+      flex-direction: row
+      gap: 40px
+    .therapy_item_text
+      width: calc((100% - 80px) / 3)
+    .therapy_item
+      margin-left: 0px
+      border-radius: 35px
+      padding: 40px
+      width: calc((100% - 80px) / 3)
+      .icon
+        right: 25px
+        left: auto
+        top: 25px
+        img, svg
+          max-width: 90px
+          border-radius: 20px
+      .therapy_item_title
+        margin-bottom: 70px
+        font-size: 16px
+        margin-left: 0px
+        margin-top: 0px
+      .therapy_item_subtitle
+        font-size: 15px
+  .urology
+    padding: 100px 0
+    background: #ebf5ff
+    border-radius: 100px
+    .urology_subtitle
+      margin-bottom: 0
+      font-size: 16px
+    .urology_items_wrapper
+      flex-direction: row
+      gap: 50px 40px
+      margin-top: 50px
+      .urology_item
+        margin-left: 0
+        border-radius: 35px
+        padding: 50px 25px 25px 50px
+        width: calc((100% - 40px) / 2)
+        &:last-child
+          width: 100%
+        .urology_item_title
+          margin-bottom: 15px
+          font-size: 24px
+        span
+          gap: 24px
+          align-items: flex-end
+          .urology_item_subtitle
+            font-size: 15px
+          .icon
+            margin-bottom: 0px
+            img
+              max-height: 166px
+              width: auto
+              border-radius: 30px
+  footer
+    padding-bottom: 80px
+    .footer_wrapper
+      padding-top: 80px
+      .logo
+        margin-bottom: 12px
+      p
+        margin-bottom: 10px
+        font-size: 12px
+        &:last-child
+          white-space: nowrap
+      .nav_wrapper
+        gap: 30px
+        margin-bottom: 8px
+        nav
+          width: auto
+          ul
+            gap: 15px 0
+            li
+              width: calc(100% / 3)
+              a
+                font-size: 18px
+        .social_items
+          width: auto
+          gap: 10px
+      .info_wrapper
+        gap: 100px
+        margin-right: 180px
+        a
+          font-size: 18px
+  .app
+    background: #ebf5ff
+    border-radius: 100px
+    padding: 100px 0
+    .section_title
+      margin-bottom: 18px
+    p
+      font-size: 15px
+    .links_wrapper
+      background: none
+      margin-top: 80px
+      gap: 20px
+      margin-left: 0
+      width: 100%
+      padding: 0
+      .qr
+        display: block
+        height: 100%
+      span
+        width: 55%
+        gap: 17px
+        .buttons
+          flex-direction: row
+          gap: 10px 20px
+          a
+            width: calc((100% - 20px) / 2)
+    .image_wrapper
+      width: 100%
+      img
+        top: -35px
+        right: 0
+  .drop-page.hero, .checkup-page.hero
+    background: linear-gradient(180deg, #c4e2ff 0%, rgba(255, 255, 255, 0) 100%)
+    .hero_title
+      font-weight: 600
+      margin-bottom: 58px
+      margin-top: 33px
+    .drop-page_subtitle-big
+      font-weight: 500
+      margin-bottom: 14px
+      font-size: 30px
+    .drop-page_subtitle
+      margin-bottom: 34px
+      font-size: 18px
+    .button.main
+      width: auto
+      margin-top: 0px
+  .drop-page.about, .checkup-page.about
+    .about_wrapper
+      overflow: hidden
+      margin-top: 0
+      position: relative
+      padding: 100px 0
+    &::before
+      content: none
+    img
+      z-index: 1
+      max-height: none
+      position: absolute
+      left: 0
+      top: 0
+      height: 100%
+      width: auto
+      object-fit: contain
+  .drop-page.drop
+    padding: 130px 0 120px 0
+    .drop_subtitle
+      margin-bottom: 67px
+      font-size: 28px
+  .drop-list
+    padding: 100px 0
+    margin-bottom: 130px
+    border-radius: 100px
+    .drop_subtitle
+      margin-bottom: 90px
+      font-size: 28px
+      span
+        padding: 0
+        background: none
+    .drop-items_wrapper
+      flex-direction: row
+      gap: 40px
+    .drop-item
+      width: calc(50% - 20px)
+      margin-left: 0px
+      border-radius: 35px
+      img
+        border-radius: 35px
+      span
+        padding: 50px 34px 20px 11px
+        .title
+          margin-bottom: 20px
+          font-size: 24px
+        p
+          margin-bottom: 30px
+          font-size: 16px
+        .price
+          gap: 30px
+          .last_price
+            font-size: 20px
+          .current_price
+            font-size: 20px
+  .doctor-page.hero
+    background: linear-gradient(180deg, #c4e2ff 0%, rgba(255, 255, 255, 0) 100%) 
+    .hero_title
+      margin-bottom: 20px
+      font-weight: 600
+      margin-top: 33px
+    .doctor-page_subtitle
+      font-size: 20px
+      span
+        display: inline-block
+        font-size: 20px
+        padding: 2px 16px
+        border-radius: 50px
+    .image_wrapper
+      img
+        margin-top: 0px
+        width: 100%
+      .layer
+        width: 120%
+        right: 30%
+        bottom: 55px
+        padding: 30px 40px
+        font-size: 25px
+        background: rgba(126, 204, 238, 0.3)
+        border-radius: 40px
+      .button_wrapper
+        position: absolute
+        left: 30px
+        bottom: -20px
+        gap: 26px
+        font-size: 20px
+        .button
+          font-size: 14px
+          border-radius: 90px
+          padding: 15px 18px
+  .doctor
+    padding: 100px 0 0 0
+    img
+      margin: 0
+      height: auto
+    .title
+      padding-left: 40px
+      margin-bottom: 10px
+      font-size: 28px
+    p
+      padding-left: 40px
+      font-size: 16px
+      &:nth-child(2)
+        margin-bottom: 30px
+    span
+      padding-left: 40px
+      margin: 20px 0
+      flex-direction: row
+      align-items: flex-start
+      a
+        font-size: 16px
+        padding: 8px 20px
+        border-radius: 10px
+  .doctor-list
+    padding: 0 0 130px 0
+    .title
+      font-size: 28px
+      margin-bottom: 45px
+      padding-left: 40px
+      margin-top: 100px
+    .item
+      flex-direction: row
+      gap: 50px
+      border-radius: 30px
+      margin-bottom: 20px
+      .about_person
+        border-radius: 30px
+        width: 40%
+        padding: 35px 40px
+        span
+          .name
+            margin-bottom: 14px
+            font-size: 20px
+          .post
+            font-size: 16px
+            margin-bottom: 0px
+        .experience
+          font-size: 16px
+      .info
+        padding: 40px 50px 30px 50px
+        span
+          margin-bottom: 18px
+          gap: 0px
+          flex-direction: row
+          align-items: center
+          .link
+            border-radius: 10px
+            padding: 8px 14px 
+            font-size: 16px
+      p
+        margin-bottom: 10px
+        font-size: 16px
+  .checkup-page.checkup
+    padding: 130px 0
+    .checkup_subtitle_big
+      margin-bottom: 45px
+      font-size: 28px
+    .price
+      margin-top: 25px
+      gap: 20px
+      .current_price
+        padding: 3px 16px
+        border-radius: 130px
+        font-size: 20px
+      .last_price
+        font-size: 20px
+  .checkup-list
+    border-radius: 100px
+    padding: 100px 0
+    .checkup-list_title
+      margin-bottom: 90px
+      font-size: 28px
+      span
+        border-radius: 35px
+        padding: 4px 10px
+    .checkup-list_wrapper
+      gap: 40px
+      .checkup-list_item
+        width: calc((100% - 120px) / 4)
+        border-radius: 35px
+        display: flex
+        flex-direction: column
+        .image_wrapper
+          width: 100%
+          padding-top: 28px
+          border-radius: 35px 35px 0 0
+          &::before
+            content: ''
+          img
+            height: 80px
+        .content
+          width: 100%
+          border-radius: 35px
+          padding: 30px 30px 20px 30px
+          svg
+            top: 13px
+            right: 13px
+          .title
+            margin-bottom: 8px
+            font-size: 20px
+          p
+            margin-bottom: 30px
+            font-size: 15px
+          span
+            display: block
+            margin-bottom: 4px
+            font-size: 13px
+          .price
+            gap: 20px
+            .current_price
+              font-size: 20px
+            .last_price
+              font-size: 20px
+  .checkup-page.promo
+    .promo_wrapper
+      border-radius: 50px
+      margin-bottom: 100px
+      padding: 70px 60px 50px 60px
+      width: 100%
+      background-image: url(../images/dist/checkup-page_promo.png) !important
+      .title
+        font-size: 24px
+        margin-bottom: 18px
+        padding: 0
+      p
+        padding: 0
+        max-width: 50%
+        font-size: 16px
+        margin-bottom: 15px
+        &:nth-child(3)
+          background: none !important
+          padding: 0px
+          border-radius: 0px
+          width: 100%
+      .button
+        margin-top: 40px
+        width: auto
+        margin-left: 0
+  .checkup_popup
+    max-width: 950px
+    width: 95%
+    padding: 40px 30px
+    .header_wrapper
+      gap: 10px
+      flex-direction: row
+      img
+        position: relative
+        left: auto
+        top: auto
+        right: auto
+        bottom: auto
+        z-index: 1
+        margin-top: -50px
+        margin-bottom: -29px
+        margin-left: -30px
+        max-width: none
+        margin-right: 0px
+      .title
+        font-size: 24px
+        margin-bottom: 16px
+        margin-top: 30px
+        span
+          border-radius: 35px
+          padding: 5px 18px
+      .subtitle
+        font-size: 20px
+    .block
+      padding: 40px
+      border-radius: 35px
+      margin-bottom: 40px
+      width: 100%
+      margin-left: 0px
+      .title
+        margin-bottom: 10px
+        font-size: 20px
+      p
+        font-size: 15px
+        margin-bottom: 30px
+    .block-big.blue
+      background: #d4e9ff
+    .block-big.yellow
+      background: rgba(251, 255, 202, 0.8)
+    .block-big.peach
+      background: rgba(255, 228, 185, 0.7)
+    .block-big
+      padding: 45px 70px
+      border-radius: 35px
+      margin-bottom: 40px
+      .header
+        gap: 30px
+        .title
+          margin-bottom: 35px
+          font-size: 20px
+        img
+          display: block
+          margin-top: -40px
+          margin-left: -20px
+      .list
+        flex-direction: row
+        gap: 30px 60px
+        .column
+          gap: 30px
+          width: calc(100% / 2 - 60px)
+        .item
+          background: rgba(255, 255, 255, 0.4)
+          border-radius: 35px
+          .type
+            background: #fff
+            height: 70px
+            border-radius: 35px
+            font-size: 15px
+          ol
+            padding: 20px 30px 20px 45px
+            li
+              font-size: 12px
+    .promo
+      width: 100%
+      margin-left: 0px
+      background-image: url(../images/dist/checkup-page_promo.png) !important
+      border-radius: 50px
+      padding: 40px 40px 30px 40px
+      background-size: cover
+      background-position: right center
+      .title
+        max-width: 60%
+        margin-bottom: 15px
+        font-size: 20px
+        background: none !important
+        border-radius: 0px
+        padding: 0px
+      ul
+        max-width: 60%
+        padding: 0
+        padding-left: 2rem
+        li
+          margin-bottom: 8px
+          font-size: 15px
+  .white-popup-block
+    margin: 70px auto
 
 +media-breakpoint-up(xl)
 @media (min-width: 1490px)
@@ -140,3 +1509,39 @@
     .product_type_wrapper
       padding: 0 45px 0 90px
 
+
+
++media-breakpoint-up(xs)
+  .order-5
+    -webkit-box-ordinal-group: 6 
+    -ms-flex-order: 5 
+    order: 5 
+  .order-6
+    -webkit-box-ordinal-group: 7 
+    -ms-flex-order: 6 
+    order: 6 
+  .order-7
+    -webkit-box-ordinal-group: 8 
+    -ms-flex-order: 7 
+    order: 7
+  .order-8
+    -webkit-box-ordinal-group: 9 
+    -ms-flex-order: 8 
+    order: 8
+@media (min-width: 992px)
+  .order-lg-5
+    -webkit-box-ordinal-group: 6 !important
+    -ms-flex-order: 5 !important
+    order: 5 !important
+  .order-lg-6
+    -webkit-box-ordinal-group: 7 !important
+    -ms-flex-order: 6 !important
+    order: 6 !important
+  .order-lg-7
+    -webkit-box-ordinal-group: 8 !important
+    -ms-flex-order: 7 !important
+    order: 7 !important
+  .order-lg-8
+    -webkit-box-ordinal-group: 9 !important
+    -ms-flex-order: 8 !important
+    order: 8 !important

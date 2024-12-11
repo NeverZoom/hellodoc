@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		var action4 = gsap.to('.fixed-4', {ease: 'none', duration: 0.25 });
 		var height4 = $('.fixed-4').height() + 20;
+		// console.log(height4)
 		ScrollTrigger.create({
 			trigger: ".fixed-4",
 			start: "top 20px",
@@ -67,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		var action5 = gsap.to('.fixed-5', {ease: 'none', duration: 0.25 });
 		var height5 = $('.fixed-5').height() + 20;
-		// console.log(height);
+		// console.log(height5)
 		ScrollTrigger.create({
 			trigger: ".fixed-5",
 			start: "top 20px",
