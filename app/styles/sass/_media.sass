@@ -3,9 +3,13 @@
     padding-top: 11px
     padding-bottom: 0px
   .hero
-    min-height: 100vh
+    background: #d7eaff
+    min-height: 80vh
+    margin-bottom: 60px
+    padding-bottom: 30px
+    border-radius: 0 0 25px  25px
     .hero_title
-      margin-top: 33px
+      margin-top: 42px
       margin-bottom: 6px
       font-size: 26px
     .hero_subtitle
@@ -92,6 +96,11 @@
   .advantage
     padding-top: 60px
     overflow: hidden
+    .col-xl-12
+      .button
+        padding: 12px 18px
+        font-size: 14px
+        margin-top: 30px
     .advantage_title
       font-size: 18px
       margin-bottom: 20px
@@ -107,7 +116,7 @@
           margin-left: -20px
         &:nth-child(5)
           width: calc(100% + 40px)
-          height: 60px
+          height: 120px
           position: relative
           z-index: 2
           img
@@ -115,8 +124,8 @@
             z-index: 3
             left: -20px
             right: 0
-            top: -140%
-            height: 220px
+            top: -50%
+            height: auto
             margin-left: 0%
             width: calc(100% + 40px)
             object-fit: cover
@@ -151,7 +160,9 @@
       img
         order: -1
         width: 100%
-        max-height: 190px
+        max-height: 250px
+        // max-height: none
+        object-position: top center
         border-radius: 25px
       .scroll_block_info
         margin-bottom: 12px
@@ -577,6 +588,8 @@
       margin-top: 0
       margin-bottom: 30px
       font-size: 18px
+    svg
+      display: none
     .price
       margin-top: 14px
       gap: 18px
@@ -695,11 +708,16 @@
         margin-left: 0px
         margin-right: -40px
         z-index: 1
+      .mini-check
+        line-height: 140%
+        margin-bottom: 30px !important
       .title
         font-size: 18px
         margin-bottom: 10px
         margin-top: 0px
         span
+          margin-left: -10px
+          white-space: nowrap
           border-radius: 35px
           padding: 5px 10px
       .subtitle
@@ -790,6 +808,9 @@
     padding-bottom: 22px
   .hero
     background: #d7eaff
+    margin-bottom: 0px
+    padding-bottom: 0px
+    border-radius: 0
     min-height: 100vh
     .hero_title
       margin-top: 100px
@@ -827,6 +848,7 @@
           margin-bottom: 3px
         .item_subtitle
           font-size: 18px
+          font-weight: 500
   .button
     font-size: 14px
     padding: 15px 37px
@@ -914,9 +936,10 @@
       img
         border-radius: 35px
         &:nth-child(2)
+          margin-bottom: 0
           width: calc(30% - 20px)
           order: inherit
-          max-height: none
+          max-height: 345px
   .scroll_block
     padding-top: 130px
     padding-bottom: 130px
@@ -929,7 +952,8 @@
       display: block
       img
         width: 100%
-        max-height: 382px
+        // max-height: 382px
+        max-height: none
         border-radius: 65px
       .scroll_block_info
         margin-bottom: 18px
@@ -1202,6 +1226,7 @@
       margin-left: 0px
       border-radius: 35px
       img
+        width: 100%
         border-radius: 35px
       span
         padding: 50px 34px 20px 11px
@@ -1233,11 +1258,12 @@
     .image_wrapper
       img
         margin-top: 0px
+        top: 50px
         width: 100%
       .layer
         width: 120%
         right: 30%
-        bottom: 55px
+        bottom: 85px
         padding: 30px 40px
         font-size: 25px
         background: rgba(126, 204, 238, 0.3)
@@ -1245,7 +1271,7 @@
       .button_wrapper
         position: absolute
         left: 30px
-        bottom: -20px
+        bottom: 20px
         gap: 26px
         font-size: 20px
         .button
@@ -1316,6 +1342,11 @@
         font-size: 16px
   .checkup-page.checkup
     padding: 130px 0
+    svg
+      display: block
+      position: absolute
+      top: 14px
+      right: 20px
     .checkup_subtitle_big
       margin-bottom: 45px
       font-size: 28px
@@ -1405,7 +1436,7 @@
     width: 95%
     padding: 40px 30px
     .header_wrapper
-      gap: 10px
+      gap: 20px
       flex-direction: row
       img
         position: relative
@@ -1419,13 +1450,21 @@
         margin-left: -30px
         max-width: none
         margin-right: 0px
+      .mini-check
+        line-height: 155%
+        margin-bottom: 40px !important
       .title
+        position: relative
+        z-index: 2
         font-size: 24px
         margin-bottom: 16px
         margin-top: 30px
+        span.first
+          margin-left: -18px
         span
+          margin-left: 0
           border-radius: 35px
-          padding: 5px 18px
+          padding: 5px 18px          
       .subtitle
         font-size: 20px
     .block
@@ -1459,6 +1498,7 @@
           display: block
           margin-top: -40px
           margin-left: -20px
+          margin-bottom: -5px
       .list
         flex-direction: row
         gap: 30px 60px
@@ -1508,8 +1548,47 @@
   .hero
     .product_type_wrapper
       padding: 0 45px 0 90px
-
-
+  .hero
+    display: flex
+    align-items: center
+    .container
+      position: relative
+    img
+      right: -90px
+    .col-xl-5
+      height: calc(100vh - 100px)
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: center
+    .product_type_wrapper
+      margin-bottom: 0
+  .drop-page.hero
+    img
+      top: 50%
+      width: 67%
+      transform: translateY(-50%)
+  .checkup-page.hero
+    .container
+      position: inherit
+    img
+      right: 0
+      width: 50%
+      max-height: 1000px
+      top: 20vh
+      // top: 50%
+      // transform: translateY(-50%)
+  .hero.doctor-page
+    .top-line
+      margin-bottom: 12vh
+    .image_wrapper 
+      img
+        top: 0
+      .layer
+        bottom: 22.2%
+      .button_wrapper
+        bottom: 10%
+    
 
 +media-breakpoint-up(xs)
   .order-5
