@@ -806,8 +806,14 @@
 +media-breakpoint-up(md)
 +media-breakpoint-up(lg)
   .top-line
-    padding-top: 46px
-    padding-bottom: 22px
+    padding-top: 26px
+    padding-bottom: 42px
+  .hero.main
+    img
+      top: 80px
+    .product_type_wrapper
+      margin-bottom: 130px
+      margin-top: 60px
   .hero
     background: #d7eaff
     margin-bottom: 0px
@@ -1073,6 +1079,8 @@
         top: 25px
         img, svg
           max-width: 90px
+          width: 90px
+          height: 90px
           border-radius: 20px
       .therapy_item_title
         margin-bottom: 70px
@@ -1230,7 +1238,9 @@
       margin-left: 0px
       border-radius: 35px
       img
-        width: 100%
+        width: auto
+        height: 100%
+        object-fit: contain
         border-radius: 35px
       span
         padding: 50px 34px 20px 11px
@@ -1251,7 +1261,7 @@
     .hero_title
       margin-bottom: 20px
       font-weight: 600
-      margin-top: 33px
+      margin-top: 80px
     .doctor-page_subtitle
       font-size: 20px
       span
@@ -1262,26 +1272,27 @@
     .image_wrapper
       img
         margin-top: 0px
-        top: 50px
+        top: 60px
         width: 100%
+        right: -55px
       .layer
         width: 120%
-        right: 30%
-        bottom: 85px
+        right: 27%
+        bottom: 75px
         padding: 30px 40px
         font-size: 25px
         background: rgba(126, 204, 238, 0.3)
         border-radius: 40px
       .button_wrapper
         position: absolute
-        left: 30px
-        bottom: 20px
+        left: 80px
+        bottom: 10px
         gap: 26px
         font-size: 20px
         .button
           font-size: 14px
           border-radius: 90px
-          padding: 15px 18px
+          padding: 15px 29px
   .doctor
     padding: 100px 0 0 0
     img
@@ -1549,16 +1560,26 @@
 +media-breakpoint-up(xl)
 @media (min-width: 1490px)
 @media (min-width: 1600px)
+  .top-line
+    position: absolute
+    top: 0
+    width: 100%
+    max-width: 1320px
+    padding-left: calc(var(--bs-gutter-x)* .5)
+    padding-right: calc(var(--bs-gutter-x)* .5)
   .hero
     .product_type_wrapper
       padding: 0 45px 0 90px
   .hero
     display: flex
     align-items: center
+    position: relative
     .container
-      position: relative
+      // position: relative
     img
-      right: -90px
+      top: 100px
+      width: 67%
+      right: 20px
     .col-xl-5
       height: calc(100vh - 100px)
       display: flex
@@ -1568,13 +1589,19 @@
     .product_type_wrapper
       margin-bottom: 0
   .drop-page.hero
+    .hero_title
+      margin-top: 0
     img
       top: 50%
       width: 67%
       transform: translateY(-50%)
   .checkup-page.hero
+    .hero_title
+      margin-top: 0
+    .top-line
+      position: initial 
     .container
-      position: inherit
+      position: initial
     img
       right: 0
       width: 50%
@@ -1583,9 +1610,14 @@
       // top: 50%
       // transform: translateY(-50%)
   .hero.doctor-page
+    display: flex
+    align-items: center
+    .hero_title
+      margin-top: 80px
     .top-line
-      margin-bottom: 12vh
+      // margin-bottom: 12vh
     .image_wrapper 
+      margin-top: 80px
       img
         top: 0
       .layer
