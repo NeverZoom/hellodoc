@@ -149,4 +149,580 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
+	// ANIMATIONS
+	if (window.screen.width > 1200) {
+
+		if ($('.top-line').length) {
+			gsap.from('.top-line', {opacity: 0, duration: 1, delay: 0.5, y: -30});
+		}
+		if ($('.animation_right').length) {
+			gsap.from('.animation_right', {opacity: 0, duration: 1, delay: 0.9, x: 30});
+		}
+		if ($('.animation_opac').length) {
+			gsap.from('.animation_opac', {opacity: 0, duration: 1, delay: 0.7});
+		}
+		if ($('.animation_bottom').length) {
+			gsap.from('.animation_bottom', {opacity: 0, duration: 1, delay: 1.3, y: 30});
+		}
+		if ($('.animation_top').length) {
+			gsap.from('.animation_top', {opacity: 0, duration: 1, delay: 1.3, y: -30});
+		}
+
+		if ($('.about_wrapper').length) {
+			gsap.from(".about_wrapper img", {
+				opacity: 0, 
+				duration: 1,
+				x: -30,
+				scrollTrigger: {
+					trigger: ".about_wrapper",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+
+			gsap.from(".about_wrapper .col-xl-8", {
+				opacity: 0, 
+				duration: 1,
+				x: 30,
+				scrollTrigger: {
+					trigger: ".about_wrapper",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+		}
+
+		if ($('.servs').length) {
+			gsap.from(".servs .section_title", {
+				opacity: 0, 
+				duration: 1,
+				y: -30,
+				scrollTrigger: {
+					trigger: ".servs",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+
+			gsap.utils.toArray(".servs .servs_item").forEach((panel, i) => {
+				if(i == 1) {
+					var j = 0.2;
+				} else if (i == 2) {
+					j = 0.4;
+				} else if (i == 3) {
+					j = 0.5;
+				} else if (i == 4) {
+					j = 0.8;
+				} else if (i == 5) {
+					j = 1.2;
+				} else if (i == 6) {
+					j = 1.4;
+				} else if (i == 7) {
+					j = 1.6;
+				} else if (i == 8) {
+					j = 1.8;
+				} else if (i == 9) {
+					j = 2;
+				}
+				
+				gsap.from(panel, {
+					opacity: 0, 
+					duration: 0.2,
+					delay: j,
+					y: 30,
+					scrollTrigger: {
+						trigger: panel,
+						start:"top 97%",
+						// end: "+=500",
+						toggleActions: "play none none none ",
+						// markers: true,
+					}
+				});
+			});
+		}
+
+		if ($('.advantage').length) {
+			gsap.from(".advantage_title", {
+				opacity: 0, 
+				duration: 1,
+				y: -30,
+				scrollTrigger: {
+					trigger: ".advantage",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+
+			gsap.utils.toArray(".advantage .advantage_block").forEach((panel, i) => {
+				if(i == 1) {
+					var j = 0.2;
+				} else if (i == 2) {
+					j = 0.4;
+				} else if (i == 3) {
+					j = 0.5;
+				} else if (i == 4) {
+					j = 0.8;
+				} else if (i == 5) {
+					j = 1.2;
+				} else if (i == 6) {
+					j = 1.4;
+				} else if (i == 7) {
+					j = 1.6;
+				} else if (i == 8) {
+					j = 1.8;
+				} else if (i == 9) {
+					j = 2;
+				}
+				
+				gsap.from(panel, {
+					opacity: 0, 
+					duration: 0.4,
+					delay: j,
+					x: -50,
+					scrollTrigger: {
+						trigger: panel,
+						start:"top 97%",
+						// end: "+=500",
+						toggleActions: "play none none none ",
+						// markers: true,
+					}
+				});
+			});
+		}
+
+		if ($('.scroll_block-1').length) {
+			gsap.from(".scroll_block-1 .section_title", {
+				opacity: 0, 
+				duration: 1,
+				x: -30,
+				scrollTrigger: {
+					trigger: ".scroll_block-1",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+
+			gsap.utils.toArray(".scroll_block-1 .scroll_block_item").forEach((panel, i) => {
+				if(i == 1) {
+					var j = 0.2;
+				} else if (i == 2) {
+					j = 0.4;
+				} else if (i == 3) {
+					j = 0.5;
+				} else if (i == 4) {
+					j = 0.8;
+				} else if (i == 5) {
+					j = 1.2;
+				} else if (i == 6) {
+					j = 1.4;
+				} else if (i == 7) {
+					j = 1.6;
+				} else if (i == 8) {
+					j = 1.8;
+				} else if (i == 9) {
+					j = 2;
+				}
+				
+				gsap.from(panel, {
+					opacity: 0, 
+					duration: 0.4,
+					delay: j,
+					y: 50,
+					scrollTrigger: {
+						trigger: panel,
+						start:"top 97%",
+						// end: "+=500",
+						toggleActions: "play none none none ",
+						// markers: true,
+					}
+				});
+			});
+		}
+		if ($('.scroll_block-2').length) {
+			gsap.from(".scroll_block-2 .section_title", {
+				opacity: 0, 
+				duration: 1,
+				x: -30,
+				scrollTrigger: {
+					trigger: ".scroll_block-2",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+
+			gsap.utils.toArray(".scroll_block-2 .scroll_block_item").forEach((panel, i) => {
+				if(i == 1) {
+					var j = 0.2;
+				} else if (i == 2) {
+					j = 0.4;
+				} else if (i == 3) {
+					j = 0.5;
+				} else if (i == 4) {
+					j = 0.8;
+				} else if (i == 5) {
+					j = 1.2;
+				} else if (i == 6) {
+					j = 1.4;
+				} else if (i == 7) {
+					j = 1.6;
+				} else if (i == 8) {
+					j = 1.8;
+				} else if (i == 9) {
+					j = 2;
+				}
+				
+				gsap.from(panel, {
+					opacity: 0, 
+					duration: 0.4,
+					delay: j,
+					y: 50,
+					scrollTrigger: {
+						trigger: panel,
+						start:"top 97%",
+						// end: "+=500",
+						toggleActions: "play none none none ",
+						// markers: true,
+					}
+				});
+			});
+		}
+		if ($('.scroll_block-3').length) {
+			gsap.from(".scroll_block-3 .section_title", {
+				opacity: 0, 
+				duration: 1,
+				x: -30,
+				scrollTrigger: {
+					trigger: ".scroll_block-3",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+
+			gsap.utils.toArray(".scroll_block-3 .scroll_block_item").forEach((panel, i) => {
+				if(i == 1) {
+					var j = 0.2;
+				} else if (i == 2) {
+					j = 0.4;
+				} else if (i == 3) {
+					j = 0.5;
+				} else if (i == 4) {
+					j = 0.8;
+				} else if (i == 5) {
+					j = 1.2;
+				} else if (i == 6) {
+					j = 1.4;
+				} else if (i == 7) {
+					j = 1.6;
+				} else if (i == 8) {
+					j = 1.8;
+				} else if (i == 9) {
+					j = 2;
+				}
+				
+				gsap.from(panel, {
+					opacity: 0, 
+					duration: 0.4,
+					delay: j,
+					y: 50,
+					scrollTrigger: {
+						trigger: panel,
+						start:"top 97%",
+						// end: "+=500",
+						toggleActions: "play none none none ",
+						// markers: true,
+					}
+				});
+			});
+		}
+		if ($('.scroll_block-4').length) {
+			gsap.from(".scroll_block-4 .section_title", {
+				opacity: 0, 
+				duration: 1,
+				x: -30,
+				scrollTrigger: {
+					trigger: ".scroll_block-4",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+
+			gsap.utils.toArray(".scroll_block-4 .scroll_block_item").forEach((panel, i) => {
+				if(i == 1) {
+					var j = 0.2;
+				} else if (i == 2) {
+					j = 0.4;
+				} else if (i == 3) {
+					j = 0.5;
+				} else if (i == 4) {
+					j = 0.8;
+				} else if (i == 5) {
+					j = 1.2;
+				} else if (i == 6) {
+					j = 1.4;
+				} else if (i == 7) {
+					j = 1.6;
+				} else if (i == 8) {
+					j = 1.8;
+				} else if (i == 9) {
+					j = 2;
+				}
+				
+				gsap.from(panel, {
+					opacity: 0, 
+					duration: 0.4,
+					delay: j,
+					y: 50,
+					scrollTrigger: {
+						trigger: panel,
+						start:"top 97%",
+						// end: "+=500",
+						toggleActions: "play none none none ",
+						// markers: true,
+					}
+				});
+			});
+		}
+		if ($('.scroll_block-5').length) {
+			gsap.from(".scroll_block-5 .section_title", {
+				opacity: 0, 
+				duration: 1,
+				x: -30,
+				scrollTrigger: {
+					trigger: ".scroll_block-5",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+
+			gsap.utils.toArray(".scroll_block-5 .scroll_block_item").forEach((panel, i) => {
+				if(i == 1) {
+					var j = 0.2;
+				} else if (i == 2) {
+					j = 0.4;
+				} else if (i == 3) {
+					j = 0.5;
+				} else if (i == 4) {
+					j = 0.8;
+				} else if (i == 5) {
+					j = 1.2;
+				} else if (i == 6) {
+					j = 1.4;
+				} else if (i == 7) {
+					j = 1.6;
+				} else if (i == 8) {
+					j = 1.8;
+				} else if (i == 9) {
+					j = 2;
+				}
+				
+				gsap.from(panel, {
+					opacity: 0, 
+					duration: 0.4,
+					delay: j,
+					y: 50,
+					scrollTrigger: {
+						trigger: panel,
+						start:"top 97%",
+						// end: "+=500",
+						toggleActions: "play none none none ",
+						// markers: true,
+					}
+				});
+			});
+		}
+
+		if ($('.checkup').length) {
+			gsap.from(".checkup", {
+				opacity: 0, 
+				duration: 1,
+				y: 80,
+				scrollTrigger: {
+					trigger: ".checkup",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+		}
+
+		if ($('.drop').length) {
+			gsap.from(".drop", {
+				opacity: 0, 
+				duration: 1,
+				y: 80,
+				scrollTrigger: {
+					trigger: ".drop",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+		}
+
+		if ($('.therapy').length) {
+			gsap.from(".therapy", {
+				opacity: 0, 
+				duration: 1,
+				y: 80,
+				scrollTrigger: {
+					trigger: ".therapy",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+		}
+
+		if ($('.urology').length) {
+			gsap.from(".urology", {
+				opacity: 0, 
+				duration: 1,
+				y: 80,
+				scrollTrigger: {
+					trigger: ".urology",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+		}
+
+		if ($('.checkup-list').length) {
+			gsap.from(".checkup-list", {
+				opacity: 0, 
+				duration: 1,
+				y: 80,
+				scrollTrigger: {
+					trigger: ".checkup-list",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+		}
+
+		if ($('footer').length) {
+			gsap.from("footer", {
+				opacity: 0, 
+				duration: 1,
+				y: 120,
+				scrollTrigger: {
+					trigger: "footer",
+					start:"top 100%",
+					end: "top 10%",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+		}
+
+		if ($('.checkup-page.promo').length) {
+			gsap.from(".checkup-page.promo", {
+				opacity: 0, 
+				duration: 1,
+				y: 80,
+				scrollTrigger: {
+					trigger: ".checkup-page.promo",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+		}
+
+		if ($('.doctor').length) {
+			gsap.from(".doctor .col-xl-4", {
+				opacity: 0, 
+				duration: 1,
+				x: -60,
+				scrollTrigger: {
+					trigger: ".doctor",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+			gsap.from(".doctor .col-xl-8", {
+				opacity: 0, 
+				duration: 1,
+				x: 60,
+				scrollTrigger: {
+					trigger: ".doctor",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+		}
+
+		if ($('.doctor-list').length) {
+
+			gsap.utils.toArray(".doctor-list .col-xl-12").forEach((panel, i) => {
+				if(i == 1) {
+					var j = 0.2;
+				} else if (i == 2) {
+					j = 0.4;
+				} else {
+					j = 0.5;
+				}
+				
+				gsap.from(panel, {
+					opacity: 0, 
+					duration: 0.4,
+					delay: j,
+					y: 50,
+					scrollTrigger: {
+						trigger: panel,
+						start:"top 97%",
+						// end: "+=500",
+						toggleActions: "play none none none ",
+						// markers: true,
+					}
+				});
+			});
+		}
+
+		if ($('.drop-list').length) {
+			gsap.from(".drop-list", {
+				opacity: 0, 
+				duration: 1,
+				y: 80,
+				scrollTrigger: {
+					trigger: ".drop-list",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+		}
+	}
+
+
 })

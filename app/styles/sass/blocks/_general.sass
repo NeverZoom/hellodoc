@@ -322,8 +322,15 @@ a
     padding: 15px 23px
     font-size: 14px
   .close
-    display: none
+    // display: none
+    position: absolute
+    right: 15px
+    top: 15px
+    width: 24px
+    height: 24px
   .mfp-close
+    transform: scale(1.2)
+    padding: 0
     position: inherit
     opacity: 1
     display: block
@@ -331,7 +338,9 @@ a
     height: auto !important
     font-family: $userfont !important
     width: auto !important
-    color:  $textcolor !important
+    color: $textcolor !important
+    path
+      fill: #28314d
   .header_wrapper
     display: flex
     gap: 10px
