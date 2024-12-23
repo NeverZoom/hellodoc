@@ -7,6 +7,17 @@ import 'magnific-popup/dist/jquery.magnific-popup.min.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
+	$('.burger').on('click', function() {
+		$('.mobile_menu').addClass('active');
+		// $('body').addClass('actv');
+	});
+
+	$('.close').on('click', function() {
+		$('.mobile_menu').removeClass('active');
+		// $('body').removeClass('actv');
+	});
+
+
 	// SCROLL BLOCK ANIMATION
 	if (window.screen.width > 1200) {
 		var action = gsap.to('.fixed', {ease: 'none', duration: 0.25 });
