@@ -1,8 +1,17 @@
 +media-breakpoint-up(xs)
   .top-line
-    padding-top: 11px
+    padding-left: calc(var(--bs-gutter-x)* .5)
+    padding-right: calc(var(--bs-gutter-x)* .5)
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    background: #fff
+    padding-top: 0px
     padding-bottom: 0px
+    z-index: 20
   .hero
+    padding-top: 57px
     background: #d7eaff
     min-height: 95vh
     margin-bottom: 60px
@@ -231,6 +240,7 @@
           border-radius: 20px
           width: 90px
           height: 70px
+          object-position: top center
           margin-bottom: 20px
     .about_checkup_info
       margin-top: 10px
@@ -306,6 +316,7 @@
         top: 20px
         left: 20px
         img, svg
+          object-position: top center
           object-fit: cover
           height: 70px
           width: 90px
@@ -346,6 +357,7 @@
           .icon
             margin-bottom: 20px
             img
+              object-position: top center
               max-height: 70px
               width: 90px
               border-radius: 20px
@@ -416,7 +428,7 @@
       width: 100%
       img
         width: 65%
-        top: -70px
+        top: -100px
         right: -20px
   .drop-page.hero, .checkup-page.hero
     background: #d7eaff
@@ -729,6 +741,7 @@
     .header_wrapper
       gap: 0px
       flex-direction: row-reverse
+      justify-content: space-between
       img
         max-width: 170px
         // right: 0
@@ -832,6 +845,14 @@
   .mini-checkup
     .header_wrapper
       flex-direction: column
+  .checkup_popup
+    .button
+      width: 100% !important
+    .button.outline
+      margin-left: 0px
+      margin-top: 20px
+      padding: 15px
+
 
 
 +media-breakpoint-up(sm)
@@ -840,6 +861,13 @@
   .top-line
     padding-top: 26px
     padding-bottom: 42px
+    padding-left: 0
+    padding-right: 0
+    position: relative
+    left: auto
+    top: auto
+    right: auto
+    background: none
   .hero.main
     img
       top: 80px
@@ -847,6 +875,7 @@
       margin-bottom: 130px
       margin-top: 60px
   .hero
+    padding-top: 0
     background: #d7eaff
     margin-bottom: 0px
     padding-bottom: 0px
@@ -1501,6 +1530,7 @@
     .header_wrapper
       gap: 20px
       flex-direction: row
+      justify-content: start
       img
         max-height: 300px
         position: relative
@@ -1609,7 +1639,13 @@
     margin: 70px auto
   .hdr
     background: none
-
+  .checkup_popup
+    .button
+      width: auto !important
+    .button.outline
+      margin-left: 30px
+      margin-top: 0px
+      padding: 15px 37px
 
 +media-breakpoint-up(xl)
 @media (min-width: 1490px)
