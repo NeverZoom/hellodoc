@@ -20,7 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// SCROLL BLOCK ANIMATION
 	if (window.screen.width > 1200) {
+		const img = new Image();
+		img.src = $('.fixed-5').data('src');
+		img.onload = function() {
+
 		var action = gsap.to('.fixed', {ease: 'none', duration: 0.25 });
+
+		//  => console.log(`Ширина: ${img.width}, Высота: ${img.height}`);
+		// console.log(img)
+
 		var height = $('.fixed').height() + 20;
 		ScrollTrigger.create({
 			trigger: ".fixed",
@@ -91,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			animation: action5,
 			toggleActions: 'play reverse play reverse'
 		});
+	}
 	}
 
 	// POPUPS 
