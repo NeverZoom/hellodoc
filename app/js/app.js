@@ -26,21 +26,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		var action = gsap.to('.fixed', {ease: 'none', duration: 0.25 });
 
-		//  => console.log(`Ширина: ${img.width}, Высота: ${img.height}`);
-		// console.log(img)
 
-		var height = $('.fixed').height() + 20;
-		ScrollTrigger.create({
-			trigger: ".fixed",
-			start: "top 20px",
-			endTrigger: '.end_transition',
-			end: 'bottom '+height+'px',
-			// markers: true,
-			pin: true,
-			pinSpacing: false,
-			animation: action,
-			toggleActions: 'play reverse play reverse'
-		});
+
+		// var height = $('.fixed').height() + 20;
+		// ScrollTrigger.create({
+		// 	trigger: ".fixed",
+		// 	start: "top 20px",
+		// 	endTrigger: '.end_transition',
+		// 	end: 'bottom '+height+'px',
+		// 	// markers: true,
+		// 	pin: true,
+		// 	pinSpacing: false,
+		// 	animation: action,
+		// 	toggleActions: 'play reverse play reverse'
+		// });
 
 		var action2 = gsap.to('.fixed-2', {ease: 'none', duration: 0.25 });
 		var height2 = $('.fixed-2').height() + 20;
@@ -192,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			gsap.from(".about_wrapper img", {
 				opacity: 0, 
 				duration: 1,
-				x: -30,
+				y: 30,
 				scrollTrigger: {
 					trigger: ".about_wrapper",
 					start:"top 70%",
@@ -205,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			gsap.from(".about_wrapper .col-xl-8", {
 				opacity: 0, 
 				duration: 1,
-				x: 30,
+				y: 30,
 				scrollTrigger: {
 					trigger: ".about_wrapper",
 					start:"top 70%",
@@ -220,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			gsap.from(".servs .section_title", {
 				opacity: 0, 
 				duration: 1,
-				y: -30,
+				y: 30,
 				scrollTrigger: {
 					trigger: ".servs",
 					start:"top 70%",
@@ -271,7 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			gsap.from(".advantage_title", {
 				opacity: 0, 
 				duration: 1,
-				y: -30,
+				y: 30,
 				scrollTrigger: {
 					trigger: ".advantage",
 					start:"top 70%",
@@ -306,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					opacity: 0, 
 					duration: 0.4,
 					delay: j,
-					x: -50,
+					y: 50,
 					scrollTrigger: {
 						trigger: panel,
 						start:"top 97%",
@@ -322,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			gsap.from(".scroll_block-1 .section_title", {
 				opacity: 0, 
 				duration: 1,
-				x: -30,
+				y: 30,
 				scrollTrigger: {
 					trigger: ".scroll_block-1",
 					start:"top 70%",
@@ -372,7 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			gsap.from(".scroll_block-2 .section_title", {
 				opacity: 0, 
 				duration: 1,
-				x: -30,
+				y: 30,
 				scrollTrigger: {
 					trigger: ".scroll_block-2",
 					start:"top 70%",
@@ -422,7 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			gsap.from(".scroll_block-3 .section_title", {
 				opacity: 0, 
 				duration: 1,
-				x: -30,
+				y: 30,
 				scrollTrigger: {
 					trigger: ".scroll_block-3",
 					start:"top 70%",
@@ -472,7 +471,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			gsap.from(".scroll_block-4 .section_title", {
 				opacity: 0, 
 				duration: 1,
-				x: -30,
+				y: 30,
 				scrollTrigger: {
 					trigger: ".scroll_block-4",
 					start:"top 70%",
@@ -522,7 +521,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			gsap.from(".scroll_block-5 .section_title", {
 				opacity: 0, 
 				duration: 1,
-				x: -30,
+				y: 30,
 				scrollTrigger: {
 					trigger: ".scroll_block-5",
 					start:"top 70%",
@@ -570,18 +569,32 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 
 		if ($('.checkup').length) {
-			gsap.from(".checkup", {
-				opacity: 0, 
-				duration: 1,
-				y: 80,
-				scrollTrigger: {
-					trigger: ".checkup",
-					start:"top 70%",
-					end: "+=500",
-					toggleActions: "play none none none ",
-					// markers: true,
-				}
+
+			var action = gsap.to('.checkup', {ease: 'none', duration: 0.25 });
+			ScrollTrigger.create({
+				trigger: ".scroll_block-1",
+				endTrigger: '.checkup',
+				start: "bottom 90%", 
+				end: "top -10%",
+				// markers: true,
+				pin: true,
+				pinSpacing: false,
+				// animation: action,
+				toggleActions: 'play reverse play reverse'
 			});
+
+			// gsap.from(".checkup", {
+			// 	opacity: 0, 
+			// 	duration: 1,
+			// 	y: 80,
+			// 	scrollTrigger: {
+			// 		trigger: ".checkup",
+			// 		start:"top 70%",
+			// 		end: "+=500",
+			// 		toggleActions: "play none none none ",
+			// 		// markers: true,
+			// 	}
+			// });
 		}
 
 		if ($('.drop').length) {
