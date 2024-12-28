@@ -171,6 +171,29 @@ document.addEventListener('DOMContentLoaded', () => {
 	// ANIMATIONS
 	if (window.screen.width > 1200) {
 
+		if ($('.hero_anim_title').length) {
+			gsap.from('.hero_anim_title', {opacity: 0, duration: 1.5, delay: 1, y: 30});
+		}
+		if ($('.hero_anim_subtitle').length) {
+			gsap.from('.hero_anim_subtitle', {opacity: 0, duration: 1, delay: 2, y: 30});
+		}
+		if ($('.hero_anim_btn').length) {
+			gsap.from('.hero_anim_btn', {opacity: 0, duration: 1.5, delay: 2.2, y: 30});
+		}
+		if ($('.hero_anim_info').length) {
+			gsap.from('.hero_anim_info', {opacity: 0, duration: 1.5, delay: 2.5, y: 30});
+		}
+		if ($('.hero_anim_img').length) {
+			gsap.from('.hero_anim_img', {opacity: 1, duration: 3, delay: 1.2, scale: 0});
+		}
+		if ($('.hero_anim_img_0').length) {
+			gsap.from('.hero_anim_img_0', {opacity: 1, duration: 0.8, delay: 2, scale: 0});
+		}
+		if ($('.hero_anim_img_2').length) {
+			gsap.from('.hero_anim_img_2', {opacity: 0, duration: 0.8, delay: 3.2, y: 150, x: -150});
+		}
+
+
 		if ($('.top-line').length) {
 			gsap.from('.top-line', {opacity: 0, duration: 1, delay: 0.5, y: -30});
 		}
@@ -181,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			gsap.from('.animation_opac', {opacity: 0, duration: 1, delay: 0.7});
 		}
 		if ($('.animation_bottom').length) {
-			gsap.from('.animation_bottom', {opacity: 0, duration: 1, delay: 1.3, y: 30});
+			gsap.from('.animation_bottom', {opacity: 0, duration: 1, delay: 3, y: 30});
 		}
 		if ($('.animation_top').length) {
 			gsap.from('.animation_top', {opacity: 0, duration: 1, delay: 1.3, y: -30});
