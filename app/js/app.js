@@ -620,6 +620,57 @@ document.addEventListener('DOMContentLoaded', () => {
 			// });
 		}
 
+		if ($('.checkup.checkup-page').length) {
+			gsap.from(".checkup.checkup-page .checkup_subtitle_big", {
+				opacity: 0, 
+				duration: 1,
+				y: 30,
+				scrollTrigger: {
+					trigger: ".servs",
+					start:"top 70%",
+					end: "+=500",
+					toggleActions: "play none none none ",
+					// markers: true,
+				}
+			});
+
+			gsap.utils.toArray(".checkup.checkup-page .checkup_item").forEach((panel, i) => {
+				if(i == 1) {
+					var j = 0.4;
+				} else if (i == 2) {
+					j = 0.6;
+				} else if (i == 3) {
+					j = 0.8;
+				} else if (i == 4) {
+					j = 1;
+				} else if (i == 5) {
+					j = 1.2;
+				} else if (i == 6) {
+					j = 1.4;
+				} else if (i == 7) {
+					j = 1.6;
+				} else if (i == 8) {
+					j = 1.8;
+				} else if (i == 9) {
+					j = 2;
+				}
+				
+				gsap.from(panel, {
+					opacity: 0, 
+					duration: 0.4,
+					delay: j,
+					y: 30,
+					scrollTrigger: {
+						trigger: panel,
+						start:"top 97%",
+						// end: "+=500",
+						toggleActions: "play none none none ",
+						// markers: true,
+					}
+				});
+			});
+		}
+
 		if ($('.drop').length) {
 			gsap.from(".drop", {
 				opacity: 0, 
